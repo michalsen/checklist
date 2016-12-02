@@ -14,7 +14,7 @@ page.open(url, function(status) {
          console.log(status);
      } else {
 
-         console.log(name + ' ' + url);
+      console.log(name + ' ' + url);
 
       var title = page.evaluate(function() {
         return document.title;
@@ -26,11 +26,11 @@ page.open(url, function(status) {
 
       //var content = page.content;
 
-      console.log(title);
-      console.log(description);
+      console.log('Title: ' + title);
+      console.log('Description: ' + description);
       //console.log(content);
+      page.render('images/' + name + '.png');
 
-         //page.render(name + '.png');
     }
   phantom.exit();
 });
