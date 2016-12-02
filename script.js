@@ -44,25 +44,29 @@ page.open(url, function(status) {
 
       //console.log(name + ' ' + url);
 
+      // Get that title
       var title = page.evaluate(function() {
         return document.title;
       });
 
+      // Get the desciption
       var description = page.evaluate(function() {
         return document.querySelector("meta[name='description']").content;
       });
 
+
       //var content = page.content;
 
-       if (typeof device === 'undefined') {
+      // If device is not set from the arguments, print
+      // the title, description
+      if (typeof device === 'undefined') {
           console.log('Title: ' + title);
           console.log('Description: ' + description);
           //console.log(content);
-       }
-         else {
+      }
+        else {
           page.render('images/' + name + '_' + device_name + '.png');
-        }
-
+      }
     }
   phantom.exit();
 });
