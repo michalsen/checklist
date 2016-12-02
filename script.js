@@ -54,6 +54,12 @@ page.open(url, function(status) {
         return document.querySelector("meta[name='description']").content;
       });
 
+      // Find specific class.
+      // TESTING ERRORS HERE
+      var pnt = page.evaluate(function() {
+        return document.querySelectorAll(".pnt");
+      });
+
 
       //var content = page.content;
 
@@ -62,6 +68,7 @@ page.open(url, function(status) {
       if (typeof device === 'undefined') {
           console.log('Title: ' + title);
           console.log('Description: ' + description);
+          //console.log(pnt);
           //console.log(content);
       }
         else {
