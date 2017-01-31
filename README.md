@@ -17,4 +17,6 @@ phantomjs [name] [full url] [p|t|d]
 
 if not supplied only site content will be returned
 
-### I am getting some TypeError: null is not an object errors. Hopefully I'll get some time to check it out soon.
+This script is still in dev as I was thinking about getting page attributes, and form elements to create a checklist of requirements prior to having a site go live. That has all, somewhat, gone to the wayside for now, and really only using this script to grab screen images.
+
+But who knows...
