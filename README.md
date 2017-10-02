@@ -4,6 +4,10 @@ In development for a checklist tool for web development
 
 
 ####Usage
+You will need the phantom library
+http://phantomjs.org/
+
+
 phantomjs [name] [full url] [p|t|d]
 
 
@@ -26,6 +30,6 @@ This script is still in dev as I was thinking about getting page attributes, and
 But who knows...
 
 
-phantomjs script.js space http://space.com d
-phantomjs script.js space http://space.com t
-phantomjs script.js space http://space.com p
+phantomjs script.js google http://google.com d
+phantomjs script.js google http://google.com t
+phantomjs script.js google http://google.com p
