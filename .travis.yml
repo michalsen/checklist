@@ -1,3 +1,0 @@
-language: php
-after_script:
-- echo "Test!"
